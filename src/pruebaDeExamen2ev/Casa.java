@@ -30,42 +30,28 @@ public class Casa extends Inmueble{
 		return numeroHabitacionesMax;
 	}
 
-	public void setNumeroHabitacionesMax(int numeroHabitacionesMax) {
-		this.numeroHabitacionesMax = numeroHabitacionesMax;
-	}
-
 	public int getNumeroBaños() {
 		return numeroBaños;
-	}
-
-	public void setNumeroBaños(int numeroBaños) {
-		this.numeroBaños = numeroBaños;
 	}
 
 	public int getNumeroPlantas() {
 		return numeroPlantas;
 	}
 
-	public void setNumeroPlantas(int numeroPlantas) {
-		this.numeroPlantas = numeroPlantas;
-	}
-
 	public ArrayList<Habitacion> getHabitaciones() {
 		return habitaciones;
 	}
 
-	public void setHabitaciones(ArrayList<Habitacion> habitaciones) {
-		this.habitaciones = habitaciones;
-	}
-
 	@Override
 	public String toString() {
-		String resultado = "Casa [numeroHabitacionesMax=" + numeroHabitacionesMax + ", numeroBaños=" + numeroBaños
-				+ ", numeroPlantas=" + numeroPlantas + "]";
-		for(Habitacion h : habitaciones) {
-			resultado += "\n  " + h;
-		}
-		return resultado;
+        String resultado = "Casa [id=" + getIdentificador() + ", dir=" + getDireccion()
+                + ", precio=" + getPrecioVenta() + "€, m²=" + getMetrosCuadrados()
+                + ", hab=" + numeroHabitacionesMax + ", baños=" + numeroBaños 
+                + ", plantas=" + numeroPlantas + "]\n";
+        for (Habitacion h : habitaciones) {
+            resultado += "  " + h.toString() + "\n";
+        }
+        return resultado;
 	}
 	
 	

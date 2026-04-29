@@ -14,14 +14,14 @@ public class Muestra {
 	
 	public Muestra(String nombre, ArrayList<Integer> arrayMuestras) {
 		this.nombre = nombre;
-		this.arrayMuestras = arrayMuestras;
+		this.arrayMuestras = new ArrayList<>();
 	}
 
 	public Muestra(String nombre, int[] arrayMuestras) {
 		this.nombre = nombre;
 		this.arrayMuestras = new ArrayList<>();
-		for (int i = 0; i < arrayMuestras.length; i++) {
-			this.arrayMuestras.add(arrayMuestras[i]);
+		for (int dato : arrayMuestras) {
+			this.arrayMuestras.add(dato);
 		}
 	}
 

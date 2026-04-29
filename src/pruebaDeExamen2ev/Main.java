@@ -11,7 +11,7 @@ public class Main {
 		Local local1 = new Local(1,"Calle Soto", 67.67, 67, true);
 		inmuebles.add(local1);
 		
-		Casa casa1 = new Casa(1,"Calle Coslada", 67, 68, 2, 2, 2);
+		Casa casa1 = new Casa(2,"Calle Coslada", 67, 68, 2, 2, 2);
 		inmuebles.add(casa1);
 		
 		Habitacion h1 = new Habitacion(34, 1, "Salon");

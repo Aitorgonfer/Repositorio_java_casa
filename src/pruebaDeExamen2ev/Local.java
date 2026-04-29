@@ -13,19 +13,11 @@ public class Local extends Inmueble{
 		return salidaHumos;
 	}
 
-	public void setSalidaHumos(boolean salidaHumos) {
-		this.salidaHumos = salidaHumos;
-	}
-
 	@Override
 	public String toString() {
-		return "Local [" + super.toString() + "salidaHumos=" + salidaHumos + "]";
+	    return "Local [id=" + getIdentificador() + ", dir=" + getDireccion() 
+	            + ", precio=" + getPrecioVenta() + "€, m²=" + getMetrosCuadrados() 
+	            + ", salidaHumos=" + salidaHumos + "]";
 	}
 
-	
-
-
-	
-	
-	
 }

@@ -1,7 +1,5 @@
 package pruebaDeExamen2ev;
 
-import java.util.Objects;
-
 public abstract class Inmueble {
 
 	private int identificador;
@@ -20,40 +18,18 @@ public abstract class Inmueble {
 		return identificador;
 	}
 
-	public void setIdentificador(int identificador) {
-		this.identificador = identificador;
-	}
-
 	public String getDireccion() {
 		return direccion;
-	}
-
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
 	}
 
 	public double getPrecioVenta() {
 		return precioVenta;
 	}
 
-	public void setPrecioVenta(double precioVenta) {
-		this.precioVenta = precioVenta;
-	}
-
 	public int getMetrosCuadrados() {
 		return metrosCuadrados;
 	}
-
-	public void setMetrosCuadrados(int metrosCuadrados) {
-		this.metrosCuadrados = metrosCuadrados;
-	}
-
-	@Override
-	public String toString() {
-		return "Inmueble [id=" + identificador + ", dir=" + direccion + ", precio=" + precioVenta
-				+ ", m²=" + metrosCuadrados + "]";
-	}
-
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -63,11 +39,7 @@ public abstract class Inmueble {
 		if (getClass() != obj.getClass())
 			return false;
 		Inmueble other = (Inmueble) obj;
-		return identificador == other.identificador;
+		return this.identificador == other.identificador;
 	}
-
-
-	
-	
 	
 }
